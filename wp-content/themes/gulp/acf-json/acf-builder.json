@@ -127,65 +127,165 @@
                 "endpoint": 0
             },
             {
-                "key": "field_5a6885d851a27",
-                "label": "Logo",
-                "name": "logo",
-                "type": "image",
+                "key": "field_5a69d06a631db",
+                "label": "",
+                "name": "header",
+                "type": "group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "50",
+                    "width": "",
                     "class": "",
                     "id": ""
                 },
-                "return_format": "array",
-                "preview_size": "full",
-                "library": "all",
-                "min_width": "",
-                "min_height": "",
-                "min_size": "",
-                "max_width": "",
-                "max_height": "",
-                "max_size": "",
-                "mime_types": ""
-            },
-            {
-                "key": "field_5a6897d64e009",
-                "label": "Taille du logo",
-                "name": "taille_du_logo",
-                "type": "range",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "min": "",
-                "max": "",
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_5a6885e251a28",
-                "label": "Menu",
-                "name": "menu",
-                "type": "nav_menu",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "save_format": "id",
-                "container": 0,
-                "allow_null": 1
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5a6885d851a27",
+                        "label": "Logo",
+                        "name": "logo",
+                        "type": "image",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "return_format": "array",
+                        "preview_size": "full",
+                        "library": "all",
+                        "min_width": "",
+                        "min_height": "",
+                        "min_size": "",
+                        "max_width": "",
+                        "max_height": "",
+                        "max_size": "",
+                        "mime_types": ""
+                    },
+                    {
+                        "key": "field_5a69cdb12fac4",
+                        "label": "Couleur de fond",
+                        "name": "bg_header",
+                        "type": "extended-color-picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "color_palette": "",
+                        "hide_palette": 0
+                    },
+                    {
+                        "key": "field_5a6897d64e009",
+                        "label": "Taille du logo",
+                        "name": "logo_size",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 150,
+                        "min": 100,
+                        "max": 400,
+                        "step": "",
+                        "prepend": "",
+                        "append": "px"
+                    },
+                    {
+                        "key": "field_5a69ceda6d990",
+                        "label": "Position du logo",
+                        "name": "logo_position",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Centré": "Centré",
+                            "A gauche": "A gauche"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a6885e251a28",
+                        "label": "Menu",
+                        "name": "menu",
+                        "type": "nav_menu",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "save_format": "id",
+                        "container": 0,
+                        "allow_null": 1
+                    },
+                    {
+                        "key": "field_5a69cdfdfcb34",
+                        "label": "Alignement du menu",
+                        "name": "menu_alignement",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Centré": "Centré",
+                            "A gauche": "A gauche"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a69d46e0e838",
+                        "label": "",
+                        "name": "preview_header",
+                        "type": "group",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "layout": "block",
+                        "sub_fields": []
+                    }
+                ]
             }
         ],
         "location": [
@@ -287,27 +387,10 @@
                 "endpoint": 0
             },
             {
-                "key": "field_5a61e1256967b",
-                "label": "Titre de niveau 1",
-                "name": "",
-                "type": "accordion",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "open": 0,
-                "multi_expand": 0,
-                "endpoint": 0
-            },
-            {
-                "key": "field_5a61d27259b09",
+                "key": "field_5a69d180d0d8f",
                 "label": "",
-                "name": "heading_1",
-                "type": "google_font_selector",
+                "name": "typos",
+                "type": "group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -316,492 +399,735 @@
                     "class": "",
                     "id": ""
                 },
-                "include_web_safe_fonts": 1,
-                "enqueue_font": 1,
-                "default_font": "Open Sans"
-            },
-            {
-                "key": "field_5a61d2b059b0b",
-                "label": "Taille",
-                "name": "taille_1",
-                "type": "range",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 30,
-                "min": 11,
-                "max": 60,
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_5a61d2b459b0c",
-                "label": "Graisse",
-                "name": "graisse_1",
-                "type": "select",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "300": "Light",
-                    "400": "Regular",
-                    "600": "Semi-Bold",
-                    "700": "Bold",
-                    "800": "Extra-Bold"
-                },
-                "default_value": [
-                    700
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "ui": 0,
-                "ajax": 0,
-                "return_format": "value",
-                "placeholder": ""
-            },
-            {
-                "key": "field_5a61d2a659b0a",
-                "label": "Couleur",
-                "name": "couleur_1",
-                "type": "extended-color-picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#000000",
-                "color_palette": "",
-                "hide_palette": 0
-            },
-            {
-                "key": "field_5a61d30fcdeab",
-                "label": "Style",
-                "name": "style_1",
-                "type": "select",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "Normal": "Normal",
-                    "Italic": "Italic"
-                },
-                "default_value": [
-                    "Normal"
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "ui": 0,
-                "ajax": 0,
-                "return_format": "value",
-                "placeholder": ""
-            },
-            {
-                "key": "field_5a61e16732c86",
-                "label": "Titre de niveau 2",
-                "name": "",
-                "type": "accordion",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "open": 0,
-                "multi_expand": 1,
-                "endpoint": 0
-            },
-            {
-                "key": "field_5a61e1526967c",
-                "label": "",
-                "name": "heading_2",
-                "type": "google_font_selector",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "include_web_safe_fonts": 1,
-                "enqueue_font": 1,
-                "default_font": "Droid Sans"
-            },
-            {
-                "key": "field_5a61e16e32c88",
-                "label": "Taille",
-                "name": "taille_2",
-                "type": "range",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 26,
-                "min": 11,
-                "max": 60,
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_5a61e17132c89",
-                "label": "Graisse",
-                "name": "graisse_2",
-                "type": "select",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "300": "Light",
-                    "400": "Regular",
-                    "600": "Semi-Bold",
-                    "700": "Bold",
-                    "800": "Extra-Bold"
-                },
-                "default_value": [
-                    400
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "ui": 0,
-                "ajax": 0,
-                "return_format": "value",
-                "placeholder": ""
-            },
-            {
-                "key": "field_5a61e16c32c87",
-                "label": "Couleur",
-                "name": "couleur_2",
-                "type": "extended-color-picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#000000",
-                "color_palette": "",
-                "hide_palette": 0
-            },
-            {
-                "key": "field_5a61e17432c8a",
-                "label": "Style",
-                "name": "style_2",
-                "type": "select",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "Normal": "Normal",
-                    "Italic": "Italic"
-                },
-                "default_value": [],
-                "allow_null": 0,
-                "multiple": 0,
-                "ui": 0,
-                "ajax": 0,
-                "return_format": "value",
-                "placeholder": ""
-            },
-            {
-                "key": "field_5a64e5de3eefe",
-                "label": "Titre de niveau 3",
-                "name": "",
-                "type": "accordion",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "open": 0,
-                "multi_expand": 0,
-                "endpoint": 0
-            },
-            {
-                "key": "field_5a64e62b05e0e",
-                "label": "",
-                "name": "heading_3",
-                "type": "google_font_selector",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "include_web_safe_fonts": 1,
-                "enqueue_font": 1,
-                "default_font": "Open Sans"
-            },
-            {
-                "key": "field_5a64e6006d454",
-                "label": "Taille",
-                "name": "taille_3",
-                "type": "range",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 18,
-                "min": 11,
-                "max": 60,
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_5a64e6046d455",
-                "label": "Graisse",
-                "name": "graisse_3",
-                "type": "select",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "300": "Light",
-                    "400": "Regular",
-                    "600": "Semi-Bold",
-                    "700": "Bold",
-                    "800": "Extra-Bold"
-                },
-                "default_value": [
-                    700
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "ui": 0,
-                "ajax": 0,
-                "return_format": "value",
-                "placeholder": ""
-            },
-            {
-                "key": "field_5a64e6096d456",
-                "label": "Couleur",
-                "name": "couleur_3",
-                "type": "extended-color-picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#000000",
-                "color_palette": "",
-                "hide_palette": 0
-            },
-            {
-                "key": "field_5a64e60c6d457",
-                "label": "Style",
-                "name": "style_3",
-                "type": "select",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "Normal": "Normal",
-                    "Italic": "Italic"
-                },
-                "default_value": [],
-                "allow_null": 0,
-                "multiple": 0,
-                "ui": 0,
-                "ajax": 0,
-                "return_format": "value",
-                "placeholder": ""
-            },
-            {
-                "key": "field_5a64e8902644f",
-                "label": "Paragraphes",
-                "name": "",
-                "type": "accordion",
-                "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \r\n\r\nPraesent in velit neque. Maecenas malesuada erat quis augue dignissim, in scelerisque nisl posuere. Maecenas congue, justo sed viverra facilisis, risus lectus egestas augue, in ornare metus nibh quis mi.",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "open": 0,
-                "multi_expand": 0,
-                "endpoint": 0
-            },
-            {
-                "key": "field_5a64ec6907790",
-                "label": "",
-                "name": "heading_p",
-                "type": "google_font_selector",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "include_web_safe_fonts": 1,
-                "enqueue_font": 1,
-                "default_font": "Open Sans"
-            },
-            {
-                "key": "field_5a64e8e826451",
-                "label": "Taille",
-                "name": "taille_p",
-                "type": "range",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": 14,
-                "min": 11,
-                "max": 60,
-                "step": "",
-                "prepend": "",
-                "append": ""
-            },
-            {
-                "key": "field_5a64e8ec26452",
-                "label": "Graisse",
-                "name": "graisse_p",
-                "type": "select",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "choices": {
-                    "300": "Light",
-                    "400": "Regular",
-                    "600": "Semi-Bold",
-                    "700": "Bold",
-                    "800": "Extra-Bold"
-                },
-                "default_value": [
-                    400
-                ],
-                "allow_null": 0,
-                "multiple": 0,
-                "ui": 0,
-                "ajax": 0,
-                "return_format": "value",
-                "placeholder": ""
-            },
-            {
-                "key": "field_5a64e8f226453",
-                "label": "Couleur",
-                "name": "couleur_p",
-                "type": "extended-color-picker",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "50",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "#000000",
-                "color_palette": "",
-                "hide_palette": 0
-            },
-            {
-                "key": "field_5a65c650691df",
-                "label": "CSS",
-                "name": "css",
-                "type": "textarea",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "maxlength": "",
-                "rows": "",
-                "new_lines": ""
-            },
-            {
-                "key": "field_5a688b04df654",
-                "label": "end",
-                "name": "",
-                "type": "accordion",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "open": 0,
-                "multi_expand": 0,
-                "endpoint": 1
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5a61e1256967b",
+                        "label": "Titre de niveau 1",
+                        "name": "",
+                        "type": "accordion",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "open": 0,
+                        "multi_expand": 0,
+                        "endpoint": 0
+                    },
+                    {
+                        "key": "field_5a61d27259b09",
+                        "label": "",
+                        "name": "heading_1",
+                        "type": "google_font_selector",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "include_web_safe_fonts": 1,
+                        "enqueue_font": 1,
+                        "default_font": "Open Sans"
+                    },
+                    {
+                        "key": "field_5a61d2b059b0b",
+                        "label": "Taille",
+                        "name": "taille_1",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 30,
+                        "min": 11,
+                        "max": 60,
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5a61d2b459b0c",
+                        "label": "Graisse",
+                        "name": "graisse_1",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "300": "Light",
+                            "400": "Regular",
+                            "600": "Semi-Bold",
+                            "700": "Bold",
+                            "800": "Extra-Bold"
+                        },
+                        "default_value": [
+                            700
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a61d2a659b0a",
+                        "label": "Couleur",
+                        "name": "couleur_1",
+                        "type": "extended-color-picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "#000000",
+                        "color_palette": "",
+                        "hide_palette": 0
+                    },
+                    {
+                        "key": "field_5a75cd414a8e7",
+                        "label": "Transformation",
+                        "name": "transformation_1",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "normal": "Normal",
+                            "uppercase": "Majuscules"
+                        },
+                        "default_value": [
+                            "Normal"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a61d30fcdeab",
+                        "label": "Style",
+                        "name": "style_1",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Normal": "Normal",
+                            "Italic": "Italic"
+                        },
+                        "default_value": [
+                            "Normal"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a61e16732c86",
+                        "label": "Titre de niveau 2",
+                        "name": "",
+                        "type": "accordion",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "open": 0,
+                        "multi_expand": 1,
+                        "endpoint": 0
+                    },
+                    {
+                        "key": "field_5a61e1526967c",
+                        "label": "",
+                        "name": "heading_2",
+                        "type": "google_font_selector",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "include_web_safe_fonts": 1,
+                        "enqueue_font": 1,
+                        "default_font": "Droid Sans"
+                    },
+                    {
+                        "key": "field_5a61e16e32c88",
+                        "label": "Taille",
+                        "name": "taille_2",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 26,
+                        "min": 11,
+                        "max": 60,
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5a61e17132c89",
+                        "label": "Graisse",
+                        "name": "graisse_2",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "300": "Light",
+                            "400": "Regular",
+                            "600": "Semi-Bold",
+                            "700": "Bold",
+                            "800": "Extra-Bold"
+                        },
+                        "default_value": [
+                            400
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a61e16c32c87",
+                        "label": "Couleur",
+                        "name": "couleur_2",
+                        "type": "extended-color-picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "#000000",
+                        "color_palette": "",
+                        "hide_palette": 0
+                    },
+                    {
+                        "key": "field_5a75cd88a3a2a",
+                        "label": "Transformation",
+                        "name": "transformation_2",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "normal": "Normal",
+                            "uppercase": "Majuscules"
+                        },
+                        "default_value": [
+                            "Normal"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a61e17432c8a",
+                        "label": "Style",
+                        "name": "style_2",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Normal": "Normal",
+                            "Italic": "Italic"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a64e5de3eefe",
+                        "label": "Titre de niveau 3",
+                        "name": "",
+                        "type": "accordion",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "open": 0,
+                        "multi_expand": 0,
+                        "endpoint": 0
+                    },
+                    {
+                        "key": "field_5a64e62b05e0e",
+                        "label": "",
+                        "name": "heading_3",
+                        "type": "google_font_selector",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "include_web_safe_fonts": 1,
+                        "enqueue_font": 1,
+                        "default_font": "Open Sans"
+                    },
+                    {
+                        "key": "field_5a64e6006d454",
+                        "label": "Taille",
+                        "name": "taille_3",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 18,
+                        "min": 11,
+                        "max": 60,
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5a64e6046d455",
+                        "label": "Graisse",
+                        "name": "graisse_3",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "300": "Light",
+                            "400": "Regular",
+                            "600": "Semi-Bold",
+                            "700": "Bold",
+                            "800": "Extra-Bold"
+                        },
+                        "default_value": [
+                            700
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a64e6096d456",
+                        "label": "Couleur",
+                        "name": "couleur_3",
+                        "type": "extended-color-picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "#000000",
+                        "color_palette": "",
+                        "hide_palette": 0
+                    },
+                    {
+                        "key": "field_5a75cd8ca3a2b",
+                        "label": "Transformation",
+                        "name": "transformation_3",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "normal": "Normal",
+                            "uppercase": "Majuscules"
+                        },
+                        "default_value": [
+                            "Normal"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a64e60c6d457",
+                        "label": "Style",
+                        "name": "style_3",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "Normal": "Normal",
+                            "Italic": "Italic"
+                        },
+                        "default_value": [],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a64e8902644f",
+                        "label": "Paragraphes",
+                        "name": "",
+                        "type": "accordion",
+                        "instructions": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. \r\n\r\nPraesent in velit neque. Maecenas malesuada erat quis augue dignissim, in scelerisque nisl posuere. Maecenas congue, justo sed viverra facilisis, risus lectus egestas augue, in ornare metus nibh quis mi.",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "open": 0,
+                        "multi_expand": 0,
+                        "endpoint": 0
+                    },
+                    {
+                        "key": "field_5a64ec6907790",
+                        "label": "",
+                        "name": "heading_p",
+                        "type": "google_font_selector",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "include_web_safe_fonts": 1,
+                        "enqueue_font": 1,
+                        "default_font": "Open Sans"
+                    },
+                    {
+                        "key": "field_5a64e8e826451",
+                        "label": "Taille",
+                        "name": "taille_p",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 14,
+                        "min": 11,
+                        "max": 60,
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5a64e8ec26452",
+                        "label": "Graisse",
+                        "name": "graisse_p",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "300": "Light",
+                            "400": "Regular",
+                            "600": "Semi-Bold",
+                            "700": "Bold",
+                            "800": "Extra-Bold"
+                        },
+                        "default_value": [
+                            400
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a64e8f226453",
+                        "label": "Couleur",
+                        "name": "couleur_p",
+                        "type": "extended-color-picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "#000000",
+                        "color_palette": "",
+                        "hide_palette": 0
+                    },
+                    {
+                        "key": "field_5a75c9a585233",
+                        "label": "Menu",
+                        "name": "",
+                        "type": "accordion",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "open": 0,
+                        "multi_expand": 0,
+                        "endpoint": 0
+                    },
+                    {
+                        "key": "field_5a75cb2d85234",
+                        "label": "",
+                        "name": "heading_menu",
+                        "type": "google_font_selector",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "include_web_safe_fonts": 1,
+                        "enqueue_font": 1,
+                        "default_font": "Open Sans"
+                    },
+                    {
+                        "key": "field_5a75cb5d85235",
+                        "label": "Taille",
+                        "name": "taille_menu",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": 18,
+                        "min": 11,
+                        "max": 60,
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_5a75cb9d85236",
+                        "label": "Graisse",
+                        "name": "graisse_menu",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "300": "Light",
+                            "400": "Regular",
+                            "600": "Semi-Bold",
+                            "700": "Bold",
+                            "800": "Extra-Bold"
+                        },
+                        "default_value": [
+                            700
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a75ce2477384",
+                        "label": "Transformation",
+                        "name": "transformation_menu",
+                        "type": "select",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "choices": {
+                            "normal": "Normal",
+                            "uppercase": "Majuscules"
+                        },
+                        "default_value": [
+                            "Normal"
+                        ],
+                        "allow_null": 0,
+                        "multiple": 0,
+                        "ui": 0,
+                        "ajax": 0,
+                        "return_format": "value",
+                        "placeholder": ""
+                    },
+                    {
+                        "key": "field_5a75cbde85237",
+                        "label": "Couleur",
+                        "name": "couleur_menu",
+                        "type": "extended-color-picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "25",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "color_palette": "",
+                        "hide_palette": 0
+                    },
+                    {
+                        "key": "field_5a688b04df654",
+                        "label": "end",
+                        "name": "",
+                        "type": "accordion",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "open": 0,
+                        "multi_expand": 0,
+                        "endpoint": 1
+                    },
+                    {
+                        "key": "field_5a65c650691df",
+                        "label": "CSS",
+                        "name": "css",
+                        "type": "textarea",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "maxlength": "",
+                        "rows": "",
+                        "new_lines": ""
+                    }
+                ]
             }
         ],
         "location": [
@@ -843,10 +1169,10 @@
                 "endpoint": 0
             },
             {
-                "key": "field_5a688819249e9",
-                "label": "Facebook",
-                "name": "facebook",
-                "type": "text",
+                "key": "field_5a69d2b90726a",
+                "label": "",
+                "name": "reseaux_sociaux",
+                "type": "group",
                 "instructions": "",
                 "required": 0,
                 "conditional_logic": 0,
@@ -855,106 +1181,123 @@
                     "class": "",
                     "id": ""
                 },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a688821249ea",
-                "label": "Twitter",
-                "name": "twitter",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a688857a789a",
-                "label": "Instagram",
-                "name": "instagram",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a688827249eb",
-                "label": "YouTube",
-                "name": "youtube",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a688832249ec",
-                "label": "Pinterest",
-                "name": "pinterest",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
-            },
-            {
-                "key": "field_5a688839249ed",
-                "label": "LinkedIn",
-                "name": "linkedin",
-                "type": "text",
-                "instructions": "",
-                "required": 0,
-                "conditional_logic": 0,
-                "wrapper": {
-                    "width": "",
-                    "class": "",
-                    "id": ""
-                },
-                "default_value": "",
-                "placeholder": "",
-                "prepend": "",
-                "append": "",
-                "maxlength": ""
+                "layout": "block",
+                "sub_fields": [
+                    {
+                        "key": "field_5a688819249e9",
+                        "label": "<i class=\"fa fa-facebook\"><\/i> Facebook",
+                        "name": "facebook",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5a688821249ea",
+                        "label": "<i class=\"fa fa-twitter\"><\/i> Twitter",
+                        "name": "twitter",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5a688857a789a",
+                        "label": "<i class=\"fa fa-instagram\"><\/i> Instagram",
+                        "name": "instagram",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5a688827249eb",
+                        "label": "<i class=\"fa fa-youtube\"><\/i> YouTube",
+                        "name": "youtube",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5a688832249ec",
+                        "label": "<i class=\"fa fa-pinterest\"><\/i> Pinterest",
+                        "name": "pinterest",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_5a688839249ed",
+                        "label": "<i class=\"fa fa-linkedin\"><\/i> LinkedIn",
+                        "name": "linkedin",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "50",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    }
+                ]
             }
         ],
         "location": [
@@ -1243,8 +1586,8 @@
                         "message": "",
                         "default_value": 0,
                         "ui": 1,
-                        "ui_on_text": "Centré",
-                        "ui_off_text": "Full"
+                        "ui_on_text": "Full",
+                        "ui_off_text": "Centré"
                     },
                     {
                         "key": "field_5a5b9fdf66c95",
@@ -1850,6 +2193,52 @@
                                 "min": "",
                                 "max": 1,
                                 "return_format": "id"
+                            }
+                        ],
+                        "min": "",
+                        "max": ""
+                    },
+                    "5a706d6bd3411": {
+                        "key": "5a706d6bd3411",
+                        "name": "agenda",
+                        "label": "Agenda",
+                        "display": "block",
+                        "sub_fields": [
+                            {
+                                "key": "field_5a706d72d3412",
+                                "label": "date debut",
+                                "name": "date_debut",
+                                "type": "date_picker",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "display_format": "d\/m\/Y",
+                                "return_format": "d\/m\/Y",
+                                "first_day": 1
+                            },
+                            {
+                                "key": "field_5a706d80d3413",
+                                "label": "date fin",
+                                "name": "date_fin",
+                                "type": "text",
+                                "instructions": "",
+                                "required": 0,
+                                "conditional_logic": 0,
+                                "wrapper": {
+                                    "width": "",
+                                    "class": "",
+                                    "id": ""
+                                },
+                                "default_value": "",
+                                "placeholder": "",
+                                "prepend": "",
+                                "append": "",
+                                "maxlength": ""
                             }
                         ],
                         "min": "",
