@@ -1,0 +1,1 @@
+<?php get_header(); ?><?php $slides = get_field('slider', $post->ID); ?><ul class="rslides"><?php foreach( $slides as $slide ): ?><li><img src="<?php echo $slide['image']['url']; ?>"/></li><?php endforeach; ?><li><img src="1.jpg" alt=""/></li></ul><?php get_footer(); ?>

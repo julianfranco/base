@@ -1,0 +1,1 @@
+<?php foreach( $col['widgets'] as $widget ): ?><?php if( $widget['acf_fc_layout'] ) include('builder/blocs/bloc-'.$widget['acf_fc_layout'].'.php'); ?><?php endforeach; ?>
